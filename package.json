@@ -1,15 +1,33 @@
 {
   "name": "tiled-geojson",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "0.1.0",
+  "description": "Tool for generating tiled GeoJSON",
+  "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
+    "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "files": [
+    "dist/index.*",
+    "dist/tiler.*",
+    "dist/simplifier.*",
+    "dist/geojsonutils.*",
+    "bin/tiled-geojson",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "geojson",
+    "tiles"
+  ],
+  "author": "Andrew Whitesmith <awhitesmith.web@gmail.com> (https://github.com/awhitesmith)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/awhitesmith/tiled-geojson.git"
+  },
+  "homepage": "https://github.com/awhitesmith/tiled-geojson",
+  "license": "MIT",
   "devDependencies": {
     "@types/geojson": "^7946.0.16",
     "@types/node": "^24.9.2",
@@ -17,7 +35,6 @@
   },
   "dependencies": {
     "commander": "^14.0.2",
-    "fs": "^0.0.1-security",
     "mapshaper": "^0.6.113"
   },
   "bin": {
