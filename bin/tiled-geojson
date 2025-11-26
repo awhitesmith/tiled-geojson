@@ -1,0 +1,4 @@
+#!/usr/bin/env node
+
+var tiledGeojson = require('../dist/index.js');
+tiledGeojson.runCommand(process.argv);

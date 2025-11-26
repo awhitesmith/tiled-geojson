@@ -1,0 +1,26 @@
+{
+  "name": "tiled-geojson",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/geojson": "^7946.0.16",
+    "@types/node": "^24.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "commander": "^14.0.2",
+    "fs": "^0.0.1-security",
+    "mapshaper": "^0.6.113"
+  },
+  "bin": {
+    "tiled-geojson": "bin/tiled-geojson"
+  }
+}
