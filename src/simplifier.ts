@@ -70,7 +70,14 @@ function roundGeojson<T extends GeoJSON.GeoJSON>(geojson: T, zoomLevel: number):
 
 // Round a coordinate to the given resolution
 function roundCoord(number: number, resolutionMeters: number) {
-    return Math.round(number * 1e5 / resolutionMeters) * resolutionMeters / 1e5;
+    var snapped = Math.round(number * 1e5 / resolutionMeters) * resolutionMeters / 1e5;
+
+    var sigFig = -Math.floor(Math.log10(resolutionMeters / 1e5)) + 1;
+    if (sigFig < 0) {
+        sigFig = 0;
+    }
+
+    return Number(snapped.toFixed(sigFig));
 }
 
 // Convert a zoom level to a resolution in meters

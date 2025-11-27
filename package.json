@@ -1,6 +1,6 @@
 {
   "name": "tiled-geojson",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Tool for generating tiled GeoJSON",
   "main": "dist/index.js",
   "scripts": {

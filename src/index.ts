@@ -55,7 +55,7 @@ program.name("tiled-geojson")
                 var maxZoom = lods[i]!;
                 const tileSize = tileSizes[i]!;
 
-                if (opts.simplify && maxZoom >= 0) {
+                if (maxZoom >= 0) {
                     await simplifyGeometry(file, tmpOutFile, maxZoom);
                 } else {
                     fs.writeFileSync(tmpOutFile, JSON.stringify(inputGeojson));
