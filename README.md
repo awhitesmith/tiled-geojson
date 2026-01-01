@@ -20,12 +20,9 @@ See [leaflet-tiled-geojson](https://github.com/awhitesmith/leaflet-tiled-geojson
 
 ## Installation
 
-Clone and cd into the directory. To install globally, run:
-
+Install globally using npm:
 ```bash
-npm install
-npm run build
-npm link
+npm install -g tiled-geojson
 ```
 
 You should now have access to the `tiled-geojson` command.
